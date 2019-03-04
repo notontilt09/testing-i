@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "jest": "^24.1.0"
+  },
+  "name": "testing-i",
+  "description": "In this project, you will demonstrate proficiency by writing unit tests and production code to satisfy the _Minimum Viable Product_ described below.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest --watch --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/notontilt09/testing-i.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/notontilt09/testing-i/issues"
+  },
+  "homepage": "https://github.com/notontilt09/testing-i#readme"
+}
