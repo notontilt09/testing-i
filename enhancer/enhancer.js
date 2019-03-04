@@ -32,6 +32,35 @@ function success(item) {
 }
 
 function fail(item) {
+    if (item.type === 'armor') {
+        if (item.enhancement < 5) {
+            return 'cannot fail, enhancement is too low'
+        } else {
+            if (item.enhancement >=5 && item.enhancement <= 14) {
+                item.durability -= 5;
+                return item;
+            } else {
+                item.durability -= 10;
+                item.enhancement > 16 ? item.enhancement-- : item.enhancement
+                item.displayName = generateName(item.enhancement) + ' ' + item.name
+                return item;
+            }
+        }
+    } else if (item.type === 'weapon') {
+        if (item.enhancement < 7) {
+            return 'cannot fail, enhancement is too low'
+        } else {
+            if (item.enhancement >= 7 && item.enhancement <= 14) {
+                item.durability -= 5;
+                return item;
+            } else {
+                item.durability -= 10;
+                item.enhancement > 16 ? item.enhancement-- : item.enhancement
+                item.displayName = generateName(item.enhancement) + ' ' + item.name
+                return item;
+            }
+        }
+    }
 
 }
 
